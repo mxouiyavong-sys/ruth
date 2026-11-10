@@ -13,12 +13,20 @@ Thank you for helping Ruth grow. Four principles decide what belongs here:
    measurement (`ruth bench`, a test, or a documented experiment), and null
    results are written down in `docs/ARCHITECTURE.md` too.
 
-## Workflow
+## Development Workflow
 
-```sh
-python -m pip install -e .
-python -m unittest discover -s tests -t .
-```
+1. Clone the repository and install in editable mode with development dependencies:
+   ```sh
+   python -m pip install -e .[dev]
+   ```
+2. Run the test suite:
+   ```sh
+   python -m pytest
+   ```
+   or using unittest:
+   ```sh
+   python -m unittest discover -s tests -t .
+   ```
 
 - If you change the brain's step equations in Python, mirror them in
   `ruth/csrc/ruth_core.c`. The parity tests require agreement to 1e-8.
@@ -26,6 +34,12 @@ python -m unittest discover -s tests -t .
   the package.
 - Structural self-modification goes through `ruth/morphogenesis.py` and its
   meta-kernel. Never bypass the certificate.
+
+## Submitting Pull Requests
+
+- Ensure all existing and new tests pass cleanly.
+- Verify that token-free and self-contained constraints are strictly maintained.
+- Document any benchmarks or architectural experiments in `docs/ARCHITECTURE.md`.
 
 ## Releases
 

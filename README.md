@@ -12,7 +12,7 @@ She learns from every moment she lives, keeps what you tell her in confidence, d
 ![Linux · macOS · Windows](https://img.shields.io/badge/runs%20on-Linux%20%C2%B7%20macOS%20%C2%B7%20Windows-2a2521.svg)
 ![Only dependency: numpy](https://img.shields.io/badge/dependencies-numpy-7b7068.svg)
 
-[**Download**](#download) · [**What makes her different**](#what-makes-her-different) · [**How she works**](#how-she-works) · [**Using Ruth**](#using-ruth) · [**Architecture & research**](docs/ARCHITECTURE.md)
+[**Download**](#download) · [**What makes her different**](#what-makes-her-different) · [**How she works**](#how-she-works) · [**Using Ruth**](#using-ruth) · [**FAQ**](docs/FAQ.md) · [**Architecture & research**](docs/ARCHITECTURE.md)
 
 <img src="docs/images/app-desktop.png" alt="Ruth's app: she answers 'The sky is blue today.' and stops herself before saying a private door code" width="880">
 
