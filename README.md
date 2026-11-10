@@ -39,7 +39,7 @@ learns stays in one folder on your computer.
 <img src="docs/images/app-phone.png" alt="Ruth on a phone-sized screen, dark theme" width="300">
 </div>
 
-## Download
+## Getting Started
 
 You need **Python 3.9 or newer**. The only other thing downloaded is `numpy`.
 
@@ -65,6 +65,26 @@ Her mind is kept in your system's data folder: `~/.local/share/ruth` on Linux,
 `~/Library/Application Support/Ruth` on macOS, `%APPDATA%\Ruth` on Windows, or
 wherever `RUTH_HOME` points. Copy that folder to another computer and she wakes
 up there as herself.
+
+## Usage Examples
+
+### Teaching Ruth
+To teach Ruth from a file:
+```sh
+ruth teach my_notes.txt
+```
+
+### Checking Privacy
+To verify if Ruth recognizes private information in files:
+```sh
+ruth check my_files/
+```
+
+### Evolving the Architecture
+To search for a better architecture:
+```sh
+ruth evolve config
+```
 
 ## How she works
 

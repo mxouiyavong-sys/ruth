@@ -20,14 +20,14 @@ python -m pip install -e .
 python -m unittest discover -s tests -t .
 ```
 
-- If you change the brain's step equations in Python, mirror them in
-  `ruth/csrc/ruth_core.c`. The parity tests require agreement to 1e-8.
-- Keep a newborn Ruth a blank slate: no data, text or personality may ship in
-  the package.
-- Structural self-modification goes through `ruth/morphogenesis.py` and its
-  meta-kernel. Never bypass the certificate.
+### Development Guidelines
+- **Testing.** Always run `python -m unittest discover -s tests -t .` before submitting a PR.
+- **Parity.** If you change the brain's step equations in Python, mirror them in `ruth/csrc/ruth_core.c`. The parity tests require agreement to 1e-8.
+- **Privacy.** Keep a newborn Ruth a blank slate: no data, text or personality may ship in the package.
+- **Self-modification.** Structural self-modification goes through `ruth/morphogenesis.py` and its meta-kernel. Never bypass the certificate.
 
 ## Releases
 
-Bump `__version__` in `ruth/__init__.py`, then push a tag `vX.Y.Z`. The
-release workflow tests, builds and publishes the downloads.
+1. **Bump Version.** Update `__version__` in `ruth/__init__.py`.
+2. **Tag.** Push a tag `vX.Y.Z`.
+3. **Verify.** The release workflow tests, builds and publishes the downloads. Ensure all tests pass on the CI before tagging.
